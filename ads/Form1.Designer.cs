@@ -30,6 +30,7 @@
         {
             components = new System.ComponentModel.Container();
             timer1 = new System.Windows.Forms.Timer(components);
+            textBox1 = new TextBox();
             SuspendLayout();
             // 
             // timer1
@@ -37,18 +38,29 @@
             timer1.Enabled = true;
             timer1.Tick += Timer1_Tick;
             // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(128, 102);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(378, 27);
+            textBox1.TabIndex = 0;
+            // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(640, 360);
+            Controls.Add(textBox1);
+            Margin = new Padding(2, 2, 2, 2);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private System.Windows.Forms.Timer timer1;
+        private TextBox textBox1;
     }
 }
